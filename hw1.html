@@ -124,14 +124,6 @@
         .lh-tight {
             line-height: 1.25;
         }
-
-        .button {
-            display: block;
-        }
-
-        .container {
-            display: inline-block;
-        }
     </style>
 
 </head>
@@ -274,101 +266,97 @@
             </div>
         </header>
 
-    <div class="container">
-        <div class="row">
-            <main class="col">
-                <div class="row text-center">
-                    <div class="col-6">
-                        <div class="card lg-6 rounded-3">
-                            <div class="card-header py-3">
-                                <h4 class="my-0 fw-normal">Товар 1</h4>
-                            </div>
-                            <div class="card-body">
-                                <h2 class="card-title pricing-card-title">$100</h2>
-                                <p>
-                                    10 users included,
-                                    2 GB of storage,
-                                    Email support,
-                                    Help center access
-                                </p>
-                                <button type="button" class="w-100 btn btn-lg bg-success text-white">Купить</button>
-                            </div>
+        <div class="container">
+            <div class="row justify-content-center gap-5">
+                <div class="col-4">
+                    <div class="card lg-6 rounded-3 text-center">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Товар 1</h4>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title">$100</h2>
+                            <p>
+                                10 users included,
+                                2 GB of storage,
+                                Email support,
+                                Help center access
+                            </p>
+                            <button type="button" class="w-100 btn btn-lg bg-success text-white">Купить</button>
                         </div>
                     </div>
                 </div>
-                <main class="col">
-                    <div class="row mt5">
-                        <div class="col-15">
-                            <div class="card-header py-3">
-                            </div>
-                            <form>
-                                <form>
-                                    <div class="mb-20">
-                                        <label class="form-label">Имя</label>
-                                        <input type="text" class="form-control" id="name"
-                                               placeholder="Ваше имя">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email"
-                                               placeholder="Ваша почта">
-                                    </div>
-                                </form>
-                            </form>
-                            <div class="card-body">
-                                <button type="button" class="w-80 btn btn-lg bg-primary text-white">Отправить
-                                </button>
-                            </div>
+                <div class="col-4">
+                    <form>
+                        <div class="mb-4">
+                            <label class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="name"
+                                   placeholder="Ваше имя">
                         </div>
-                    </div>
-                </main>
-            </main>
-        </div>
-    </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email"
+                                   placeholder="Ваша почта">
+                        </div>
+                        <button type="button" class="w-80 btn btn-lg bg-primary text-white">Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
 
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h3 class="display-4">FAQ</h3>
+            </div>
 
-
-        <div class="container-xxl">
-            <div class="row">
-                <p class="d-inline-flex gap-5">
+            <div class="row justify-content-center">
+                <div class="col-4">
                     <button class="btn btn-primary" type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#howToBuy" aria-expanded="false"
                             aria-controls="collapseWidthExample">
                         Как купить?
                     </button>
+                </div>
+                <div class="col-4">
                     <button class="btn btn-primary" type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#howToDeliver" aria-expanded="false"
                             aria-controls="collapseWidthExample">
                         Как доставить?
                     </button>
+                </div>
+                <div class="col-4">
                     <button class="btn btn-primary" type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#whatWarranty" aria-expanded="false"
                             aria-controls="collapseWidthExample">
                         Какая гарантия?
                     </button>
-                </p>
-                <div class="row">
-                    <div style="min-height: 120px;">
-                        <div class="collapse collapse-horizontal" id="howToBuy">
-                            <div class="card card-body" style="width: 300px;">
-                                Информация о том, как клиент может приобрести товар.
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="col">
+                        <div style="min-height: 120px;">
+                            <div class="col-4 collapse collapse-horizontal" id="howToBuy">
+                                <div class="card card-body" style="width: 300px;">
+                                    Информация о том, как клиент может приобрести товар.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div style="min-height: 120px;">
-                        <div class="collapse collapse-horizontal" id="howToDeliver">
-                            <div class="card card-body" style="width: 300px;">
-                                Информация о том, как мы можем доставить товар клиенту
+                    <div class="col">
+                        <div style="min-height: 120px;">
+                            <div class="col-4 collapse collapse-horizontal" id="howToDeliver">
+                                <div class="card card-body" style="width: 300px;">
+                                    Информация о доставке.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div style="min-height: 120px;">
-                        <div class="collapse collapse-horizontal" id="whatWarranty">
-                            <div class="card card-body" style="width: 300px;">
-                                Наши гарантии.
+                    <div class="col">
+                        <div style="min-height: 120px;">
+                            <div class="col-4 collapse collapse-horizontal" id="whatWarranty">
+                                <div class="card card-body" style="width: 300px;">
+                                    Наши гарантии.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -377,20 +365,19 @@
         </div>
 
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+                crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-
-<script>
-    /* global bootstrap: false */
-    (function () {
-        'use strict'
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-            new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    })()
-</script>
+        <script>
+            /* global bootstrap: false */
+            (function () {
+                'use strict'
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            })()
+        </script>
 </body>
 </html>
